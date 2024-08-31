@@ -1,0 +1,123 @@
+:root{
+    --backgorundColor:#252525;
+    --textColor:#dbd6d6 ;
+    --formBorderColor: #cd0c0c;
+    --titleColor: #cd0c0c;
+    --margemPadrao: 250px;
+}
+html{
+    background-color: var(--backgorundColor);
+    
+    margin-left: var(--margemPadrao);
+    margin-right: var(--margemPadrao);
+    
+    scroll-behavior: smooth;
+}
+
+.menu{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.menu-item{
+    margin-top: 0;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: var(--textColor);
+}
+#fotoDiv{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin-top: 10px;
+    margin-right: calc(var(--margemPadrao)* -1);
+    margin-left: calc(var(--margemPadrao)* -1);
+    background-image:radial-gradient(circle at center, #a7030390, #25252500);
+}
+
+.myFoto{
+    height: 250px;
+    width: auto;
+    border: 3px solid var(--formBorderColor);
+    border-radius: 50%;
+}
+
+
+#myName{
+    font-size: 30px;
+    margin: 0;
+    color: var(--textColor);
+    display: flex;
+    justify-content: center;
+}
+
+#sobre-section{
+    color: var(--textColor);
+    font-size: larger;
+}
+
+.title{
+    color: var(--titleColor);
+    font-size: 32px;
+}
+
+
+#icon-rol{
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+}
+.tec-icon{
+    height: 80px;
+    width: auto;
+    border-radius: 10px;
+    
+}
+
+.form-field{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    
+    border: 1px solid var(--formBorderColor);
+    background-color: var(--backgorundColor);
+    color: var(--textColor);
+}
+
+#form-label{
+    font-size: 20px;
+    color: var(--textColor);
+}
+
+#input-box{
+    height: 20px;
+    width: 200px;
+}
+
+#mensagem-box{
+    height: 100px;
+    width: 500px;
+}
+
+#submit-button{
+    font-size: larger;
+    font-weight: 700;
+    color: var(--textColor);
+
+    margin-top: 15px;
+
+    background-color: var(--backgorundColor);
+    border: 2px solid var(--formBorderColor);
+    border-radius: 10px;
+    
+    height: 36px;
+    width: 100px;
+}
+
+.social-icon{
+    height: 64px;
+    width: auto;
+    border-radius: 10px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <!-- Informações da pagina -->
+    <head>
+        <meta name="Author" content="Lucas">
+        <link rel="stylesheet" href="styles.css">
+        <title>Lucas Gaviao</title>
+    </head>
+    
+    <!-- Header de navegação -->
+    <nav class="menu">
+        <a class="menu-item" href="#sobre-section">Sobre mim</a>
+        <a class="menu-item" href="#tec-section">Habilidades</a>
+        <a class="menu-item" href="#contact-section">Fale comigo</a>
+    </nav>
+    
+    <!-- corpo do site -->
+    <body>
+        <!-- Div com a foto e nome -->
+        <div id="fotoDiv">
+            <div>
+                <img src="myFoto.JPG" alt="Foto de Lucas Gavião" class="myFoto">
+                <div>
+                    <h2 id="myName">Lucas Gavião</h2>        
+                </div>
+            </div>
+        </div>
+        <!-- Conteudo principal/Sobre mim ;) -->
+        <main id="sobre-section">
+            <h1 id="sobre-title" class="title">Sobre mim:</h1>
+            <p>Olá, meu nome é Lucas Gavião, estou estudando para me tornar um desenvolvedor web Full-Stack.
+                Sou estudante de Ciência da Computção na Universidade Federal Fluminense - UFF,
+                atualmente no 3° Periodo. As principais tecnologias que eu domino são Python e Excel.
+                Támbem estou buscando me capacitar em Flask, JavaScript, HTML e CSS.
+            </p>
+        </main>
+
+        <!-- Sessão de habilidades -->
+        <aside id="tec-section">
+            <h1 id="tec-title" class="title">Habilidades:</h1>
+            <div id="icon-rol">
+                <img src="python-icon.png" alt="py-icon" class="tec-icon">
+                <img src="excel-icon.png" alt="excel-icon" class="tec-icon">
+                <img src="flask1-icon.png" alt="flask-icon" class="tec-icon">
+            </div>
+        </aside>
+
+        <!-- Sessão de contato -->
+        <aside id="contact-section">
+            <h1 class="title">Fale comigo:</h1>
+                <form id="form" action="">
+                    <label id="form-label" for="">Nome:</label><br>
+                    <input class="form-field" id="input-box" type="text" placeholder="Fulano Detal" required><br>
+
+                    <label id="form-label" for="">Email:</label><br>
+                    <input class="form-field" id="input-box" type="email" placeholder="fulanodetal@batatinha.com" required><br>
+                    
+                    <label id="form-label" for="">Menssagem:</label><br>
+                    <textarea class="form-field" id="mensagem-box" placeholder="Olá Lucas! pra ser super-heroi tem que fazer site bom! LUCASSS!!!!" required></textarea><br>
+                    <button id="submit-button" type="submit">Enviar</button>
+                </form>
+        </aside>
+    </body>
+
+    <!-- Rodapé -->
+    <footer id="social-section">
+        <h1 class="title">Siga-me nas redes sociais:</h1>
+        <div id="icon-rol">
+            <!-- Link para o instagram -->
+            <a href="https://www.instagram.com/lucaasgaviao/">
+                <img class="social-icon" src="instagram-icon.png" alt="instagram-icon">
+            </a>    
+            <!-- Link para o linkedin -->
+            <a href="https://www.linkedin.com/in/lucas-gaviao-/">
+                <img class="social-icon" src="linkedin-icon.png" alt="linkedin-icon">
+            </a>
+            <!-- Link para o github -->
+            <a href="https://github.com/LucasGaviao">
+                <img class="social-icon" src="github-icon.png" alt="github-icon">
+            </a>
+            </div>
+    </footer>
+</html>

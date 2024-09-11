@@ -73,7 +73,6 @@ html{
     height: 80px;
     width: auto;
     border-radius: 10px;
-    
 }
 
 .form-field{
@@ -114,6 +113,14 @@ html{
     
     height: 36px;
     width: 100px;
+}
+
+#submit-button:hover{
+    background-color: var(--formBorderColor);
+    animation: forwards;
+    animation-duration: 1;
+    transition-duration: 1s;
+    cursor: pointer;
 }
 
 .social-icon{

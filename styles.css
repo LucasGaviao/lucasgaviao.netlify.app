@@ -100,7 +100,7 @@ html{
     width: 500px;
 }
 
-#submit-button{
+.submit-button{
     font-size: larger;
     font-weight: 700;
     color: var(--textColor);
@@ -115,7 +115,7 @@ html{
     width: 100px;
 }
 
-#submit-button:hover{
+.submit-button:hover{
     background-color: var(--formBorderColor);
     animation: forwards;
     animation-duration: 1;

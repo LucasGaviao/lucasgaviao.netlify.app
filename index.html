@@ -2,6 +2,7 @@
 <html>
     <!-- Informações da pagina -->
     <head>
+        <meta charset="utf-8">
         <meta name="Author" content="Lucas">
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="icons/site-logo-2.png" type="image/png">
@@ -61,7 +62,7 @@
                     
                     <label id="form-label" for="">Menssagem:</label><br>
                     <textarea class="form-field" id="mensagem-box" placeholder="Olá Lucas! pra ser super-heroi tem que fazer site bom! LUCASSS!!!!" required></textarea><br>
-                    <button id="submit-button" type="submit">Enviar</button>
+                    <button class="submit-button" type="submit" onclick="alerta()">Enviar</button>
                 </form>
         </aside>
         <!-- Rodapé -->
@@ -69,19 +70,20 @@
             <h1 class="title">Siga-me nas redes sociais:</h1>
             <div id="icon-rol">
                 <!-- Link para o instagram -->
-                <a href="https://www.instagram.com/lucaasgaviao/">
+                <a href="https://www.instagram.com/lucaasgaviao/" target="_blank">
                     <img class="social-icon" src="icons/instagram-icon.png" alt="instagram-icon">
                 </a>    
                 <!-- Link para o linkedin -->
-                <a href="https://www.linkedin.com/in/lucas-gaviao-/">
+                <a href="https://www.linkedin.com/in/lucas-gaviao-/" target="_blank">
                     <img class="social-icon" src="icons/linkedin-icon.png" alt="linkedin-icon">
                 </a>
                 <!-- Link para o github -->
-                <a href="https://github.com/LucasGaviao">
+                <a href="https://github.com/LucasGaviao" target="_blank">
                     <img class="social-icon" src="icons/github-icon.png" alt="github-icon">
                 </a>
                 </div>
         </footer>
+        <script type="text/javascript" src="scripts.js"></script>
     </body>
 
 </html>

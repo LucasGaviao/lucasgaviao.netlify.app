@@ -12,6 +12,12 @@
     <!-- Header de navegação -->
     <!-- corpo do site -->
     <body>
+        
+        <!-- Mudança de Tema -->
+        <label for="theme-button">
+             <button id="theme-button">Light</button>
+        </label>
+        
         <nav class="menu">
             <a class="menu-item" href="#sobre-section">Sobre mim</a>
             <a class="menu-item" href="#tec-section">Habilidades</a>
@@ -54,14 +60,14 @@
         <aside id="contact-section">
             <h1 class="title">Fale comigo:</h1>
                 <form id="form" action="">
-                    <label id="form-label" for="">Nome:</label><br>
-                    <input class="form-field" id="input-box" type="text" placeholder="Fulano Detal" required><br>
+                    <label class="form-label" for="name">Nome:</label><br>
+                    <input id="name"class="form-field input-box input-focus" type="text" placeholder="Fulano Detal" required><br>
 
-                    <label id="form-label" for="">Email:</label><br>
-                    <input class="form-field" id="input-box" type="email" placeholder="fulanodetal@batatinha.com" required><br>
+                    <label class="form-label" for="email">Email:</label><br>
+                    <input id="email"class="form-field input-box input-focus" type="email" placeholder="fulanodetal@batatinha.com" required><br>
                     
-                    <label id="form-label" for="">Menssagem:</label><br>
-                    <textarea class="form-field" id="mensagem-box" placeholder="Olá Lucas! pra ser super-heroi tem que fazer site bom! LUCASSS!!!!" required></textarea><br>
+                    <label class="form-label" for="message">Menssagem:</label><br>
+                    <textarea id="message" class="form-field mensagem-box input-focus" placeholder="Olá Lucas! pra ser super-heroi tem que fazer site bom! LUCASSS!!!!" required></textarea><br>
                     <button class="submit-button" type="submit" onclick="alerta()">Enviar</button>
                 </form>
         </aside>

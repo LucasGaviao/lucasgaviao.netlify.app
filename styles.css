@@ -1,12 +1,23 @@
 :root{
-    --backgorundColor:#252525;
-    --textColor:#dbd6d6 ;
-    --formBorderColor: #cd0c0c;
-    --titleColor: #cd0c0c;
-    --margemPadrao: 250px;
+    --backgroundColor:#252525;
+    --text: #f0eeea ;
+    --primary: #dc1818;
+    --secondary: #701f1f;
+    --accent: #c14444;
+    --margemPadrao: 10rem;
+    --photogradient: radial-gradient(circle at center, #a7030390, #25252500);
 }
+.light-mode:root{
+    --backgroundColor: #f3fadf;
+    --text: #15130f;
+    --primary: #2e9f18;
+    --secondary: #9ee08f;
+    --accent: #4dbb3e;
+    --photogradient: radial-gradient(circle at center, var(--secondary), #25252500);
+  }
+
 html{
-    background-color: var(--backgorundColor);
+    background-color: var(--backgroundColor);
     
     margin-left: var(--margemPadrao);
     margin-right: var(--margemPadrao);
@@ -25,7 +36,7 @@ html{
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
-    color: var(--textColor);
+    color: var(--text);
 }
 #fotoDiv{
     display: flex;
@@ -34,13 +45,13 @@ html{
     margin-top: 10px;
     margin-right: calc(var(--margemPadrao)* -1);
     margin-left: calc(var(--margemPadrao)* -1);
-    background-image:radial-gradient(circle at center, #a7030390, #25252500);
+    background-image:var(--photogradient);
 }
 
 .myFoto{
     height: 250px;
     width: auto;
-    border: 3px solid var(--formBorderColor);
+    border: 3px solid var(--primary);
     border-radius: 50%;
 }
 
@@ -48,18 +59,18 @@ html{
 #myName{
     font-size: 30px;
     margin: 0;
-    color: var(--textColor);
+    color: var(--text);
     display: flex;
     justify-content: center;
 }
 
 #sobre-section{
-    color: var(--textColor);
+    color: var(--text);
     font-size: larger;
 }
 
 .title{
-    color: var(--titleColor);
+    color: var(--primary);
     font-size: 32px;
 }
 
@@ -80,35 +91,39 @@ html{
     margin-bottom: 5px;
     border-radius: 8px;
     
-    border: 1px solid var(--formBorderColor);
-    background-color: var(--backgorundColor);
-    color: var(--textColor);
+    border: 1px solid var(--primary);
+    background-color: var(--backgroundColor);
+    color: var(--text);
 }
 
-#form-label{
+.form-label{
     font-size: 20px;
-    color: var(--textColor);
+    color: var(--text);
 }
 
-#input-box{
+.input-box{
     height: 20px;
     width: 200px;
 }
 
-#mensagem-box{
+.mensagem-box{
     height: 100px;
     width: 500px;
+}
+
+.input-focus:focus{
+    box-shadow: 0 0 20px 2px var(--accent);
 }
 
 .submit-button{
     font-size: larger;
     font-weight: 700;
-    color: var(--textColor);
+    color: var(--text);
 
     margin-top: 15px;
 
-    background-color: var(--backgorundColor);
-    border: 2px solid var(--formBorderColor);
+    background-color: var(--backgroundColor);
+    border: 2px solid var(--accent);
     border-radius: 10px;
     
     height: 36px;
@@ -116,15 +131,50 @@ html{
 }
 
 .submit-button:hover{
-    background-color: var(--formBorderColor);
-    animation: forwards;
-    animation-duration: 1;
-    transition-duration: 1s;
+    color: var(--text);
+    background-color: var(--backgroundColor);
+    border-color: var(--text);
     cursor: pointer;
+    transition-duration: 1s;
+
+    animation: botao forwards;
+    animation-duration: 1.5s;
+
+    box-shadow: 0 0 30px 2px var(--accent);
 }
+
+
+@keyframes botao {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
 
 .social-icon{
     height: 64px;
     width: auto;
     border-radius: 10px;
+}
+
+#theme-button{
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+
+    height: 50px;
+    width: 50px;
+
+    color: var(--text);
+    border: 1px 1px 1px 1px ;
+    background-color: var(--backgroundColor);
+    border-radius: 10px;
+    border-color: var(--primary)
+}
+
+#theme-button:hover{
+    box-shadow: 0 0 20px 2px var(--accent);
 }

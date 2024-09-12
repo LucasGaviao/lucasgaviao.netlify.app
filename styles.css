@@ -3,7 +3,8 @@
     --text: #f0eeea ;
     --primary: #dc1818;
     --secondary: #701f1f;
-    --accent: #c14444;
+    --secondaryshade: #4e21218e;
+    --accent: #d96f6f;
     --margemPadrao: 10rem;
     --photogradient: radial-gradient(circle at center, #a7030390, #25252500);
 }
@@ -12,11 +13,13 @@
     --text: #15130f;
     --primary: #2e9f18;
     --secondary: #9ee08f;
-    --accent: #4dbb3e;
+    --secondaryshade: #d6f9ce8e;
+    --accent: #2e7d32;
     --photogradient: radial-gradient(circle at center, var(--secondary), #25252500);
   }
 
 html{
+    color: var(--text);
     background-color: var(--backgroundColor);
     
     margin-left: var(--margemPadrao);
@@ -25,6 +28,13 @@ html{
     scroll-behavior: smooth;
 }
 
+u{
+    text-decoration-color: var(--accent);
+}
+b{
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+}
 .menu{
     display: flex;
     gap: 15px;
@@ -59,13 +69,13 @@ html{
 #myName{
     font-size: 30px;
     margin: 0;
-    color: var(--text);
+    /*color: var(--text);*/
     display: flex;
     justify-content: center;
 }
 
 #sobre-section{
-    color: var(--text);
+    /*color: var(--text);*/
     font-size: larger;
 }
 
@@ -98,7 +108,7 @@ html{
 
 .form-label{
     font-size: 20px;
-    color: var(--text);
+    /*color: var(--text);*/
 }
 
 .input-box{
@@ -177,4 +187,18 @@ html{
 
 #theme-button:hover{
     box-shadow: 0 0 20px 2px var(--accent);
+}
+
+.skill-div{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: var(--secondaryshade);
+    border-radius: 15px;
+}
+
+.skill-div a{
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
 }

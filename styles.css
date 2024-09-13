@@ -1,20 +1,23 @@
 :root{
+    --margemPadrao: 10rem;
     --backgroundColor:#252525;
     --text: #f0eeea ;
-    --primary: #dc1818;
-    --secondary: #701f1f;
-    --secondaryshade: #4e21218e;
-    --accent: #d96f6f;
-    --margemPadrao: 10rem;
-    --photogradient: radial-gradient(circle at center, #a7030390, var(--backgroundColor));
-    --nikitirunColor:  #20294a;
+    --primary: #004f75;
+    --secondary: #104277;
+    --secondaryshade: #021d398e;
+    --accent: #089299 ;
+    --photogradient: radial-gradient(circle at center, var(--secondary),var(--backgroundColor));
+    --nikitirunColor:  #0758877b;
 }
+
+/*e3b0b0d9*/
 .light-mode:root{
+    --margemPadrao: 10rem;
     --backgroundColor: #e0e0e0;
     --text: #212121;
     --primary: #004f75;
     --secondary: #104277;
-    --secondaryshade: #d6f9ce8e;
+    --secondaryshade: #cef9f08e;
     --accent: #089299 ;
     --photogradient: radial-gradient(circle at center, var(--secondary),var(--backgroundColor));
     --nikitirunColor:  #c0e1f4;

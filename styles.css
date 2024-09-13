@@ -95,7 +95,9 @@ b{
 #icon-rol{
     display: flex;
     gap: 20px;
-    justify-content: start;
+    justify-content:flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .tec-icon{
     height: 80px;

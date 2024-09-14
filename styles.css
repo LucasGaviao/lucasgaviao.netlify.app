@@ -120,6 +120,10 @@ b{
     font-size: large;
 }
 
+.form-field:hover{
+    box-shadow: 0 0 20px 2px var(--accent);
+}
+
 .form-label{
     font-size: 24px;
     /*color: var(--text);*/
@@ -131,10 +135,12 @@ b{
     width: 20rem;
 }
 
-.mensagem-box{
+.message-box{
     padding: 0.25rem;
     height: 100px;
     width: 500px;
+    min-height: 10rem;
+    resize: vertical;
 }
 
 .input-focus:focus{

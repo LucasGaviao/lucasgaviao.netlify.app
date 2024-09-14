@@ -2,7 +2,7 @@
     --margemPadrao: 10rem;
     --backgroundColor:#252525;
     --text: #f0eeea ;
-    --primary: #004f75;
+    --primary: #015d87;
     --secondary: #104277;
     --secondaryshade: #021d398e;
     --accent: #089299 ;
@@ -15,7 +15,7 @@
     --margemPadrao: 10rem;
     --backgroundColor: #e0e0e0;
     --text: #212121;
-    --primary: #004f75;
+    --primary: #015a84;
     --secondary: #104277;
     --secondaryshade: #cef9f08e;
     --accent: #089299 ;
@@ -36,6 +36,7 @@ html{
 b{
     color: var(--accent);
 }
+
 .menu{
     display: flex;
     gap: 15px;
@@ -153,6 +154,7 @@ b{
     color: var(--text);
 
     margin-top: 15px;
+    cursor: pointer;
 
     background-color: var(--backgroundColor);
     border: 2px solid var(--accent);
@@ -175,6 +177,17 @@ b{
     box-shadow: 0 0 30px 2px var(--accent);
 }
 
+.submit-button:disabled{
+    cursor:not-allowed;
+}
+
+.success{
+    color: var(--accent);
+}
+
+.error{
+    color: tomato;
+}
 
 @keyframes botao {
     0%{

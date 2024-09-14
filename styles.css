@@ -91,7 +91,7 @@ b{
 
 .title{
     color: var(--primary);
-    font-size: 32px;
+    font-size: 36px;
 }
 
 
@@ -115,20 +115,24 @@ b{
     
     border: 1px solid var(--primary);
     background-color: var(--backgroundColor);
+    
     color: var(--text);
+    font-size: large;
 }
 
 .form-label{
-    font-size: 20px;
+    font-size: 24px;
     /*color: var(--text);*/
 }
 
 .input-box{
+    padding: 0.25rem;
     height: 20px;
-    width: 200px;
+    width: 20rem;
 }
 
 .mensagem-box{
+    padding: 0.25rem;
     height: 100px;
     width: 500px;
 }
@@ -239,4 +243,30 @@ b{
     display: flex;
     justify-content:space-between;
     align-content:start;
+}
+
+#projeto-button{
+    font-size: larger;
+    font-weight: 700;
+    color: var(--text);
+
+    background-color: var(--backgroundColor);
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    
+    height: 80px;
+    width: auto;
+}
+
+#projeto-button:hover{
+    color: var(--text);
+    background-color: var(--backgroundColor);
+    border-color: var(--text);
+    cursor: pointer;
+    transition-duration: 1s;
+
+    animation: botao forwards;
+    animation-duration: 1.5s;
+
+    box-shadow: 0 0 30px 2px var(--accent);
 }

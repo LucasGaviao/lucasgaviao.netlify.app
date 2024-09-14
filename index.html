@@ -48,11 +48,9 @@
         <!-- Conteudo principal/Sobre mim ;) -->
         <main id="sobre-section">
             <h1 id="sobre-title" class="title">Sobre mim:</h1>
-            <p>Olá, meu nome é Lucas Gavião, estou estudando para me tornar um <b>Desenvolvedor Web</b>.
-                Sou estudante de Ciência da Computação na Universidade Federal Fluminense - UFF,
-                atualmente no 3° Periodo. As principais tecnologias que eu domino são <b>Python e Excel</b>.
-                Támbem tenho conhecimento em <b>Django, JavaScript, HTML, CSS e desenvolvimento de API REST com Flask e Postman</b>.
-            </p>
+            <p>Sou Lucas Gavião, estudante de Ciência da Computação na Universidade Federal Fluminense (UFF), atualmente no 3º período. 
+                Estou iniciando minha jornada no <b>desenvolvimento web</b>, com domínio em <b>Python e Excel</b>. 
+                Além disso, possuo conhecimentos em <b>Django, JavaScript, HTML, CSS</b> e no desenvolvimento de APIs REST utilizando <b>Flask e Postman</b>.</p>
         </main>
 
         <!-- Sessão de habilidades -->
@@ -87,18 +85,19 @@
         <!-- Sessão de contato -->
         <aside id="contact-section">
             <h1 class="title">Fale comigo:</h1>
-                <form id="form" action="https://formsubmit.co/17862cfa4e50ea77c08c0b60ba78c7ec" method="POST" data-form>
+            <!--https://formsubmit.co/ajax/17862cfa4e50ea77c08c0b60ba78c7ec  <input type="hidden" name="_next" value="https://lucasgaviao.netlify.app/">
+                    <input type="hidden" name="_captcha" value="false">  -->
+                <form id="form" action="https://formsubmit.co/ajax/17862cfa4e50ea77c08c0b60ba78c7ec" method="POST" data-form>
                     <label class="form-label" for="nome">Nome:</label><br>
-                    <input id="nome" name="nome" class="form-field input-box input-focus" type="text" placeholder="Fulano Detal" required><br>
+                    <input type="text" name="nome" id="nome" class="form-field input-box input-focus" placeholder="Nome Sobrenome" required/><br>
 
                     <label class="form-label" for="email">Email:</label><br>
-                    <input id="email" name="email" class="form-field input-box input-focus" type="email" placeholder="fulanodetal@batatinha.com" required><br>
+                    <input type="email" name="email" id="email" class="form-field input-box input-focus" placeholder="seuemail@email.com" required/><br>
                     
                     <label class="form-label" for="message">Mensagem:</label><br>
-                    <textarea id="message" name="message" class="form-field message-box input-focus" placeholder="Olá Lucas! pra ser super-heroi tem que fazer site bom! LUCASSS!!!!" required></textarea><br>
-                    <input type="hidden" name="_next" value="https://lucasgaviao.netlify.app/">
-                    <input type="hidden" name="_captcha" value="false">
-                    <button class="submit-button open-sans-regular" type="submit" data-button>Enviar</button>
+                    <textarea id="message" name="message" class="form-field message-box input-focus" placeholder="Escreva sua mensagem aqui! Deixe uma dica, um comentário, uma pergunta..." required></textarea><br>
+                    
+                    <button type="submit" data-button id="submit-button" class="submit-button open-sans-regular">Enviar</button>
                 </form>
         </aside>
         <!-- Rodapé -->

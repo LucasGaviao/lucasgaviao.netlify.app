@@ -47,28 +47,41 @@ class FormSubmit {
     }
   
     onSubmission(event) {
-      event.preventDefault();
-      event.target.disabled = true;
-      event.target.innerText = "Enviando...";
-    }
+        event.preventDefault();
+        if (!this.form.reportValidity()) {
+          event.target.disabled = false;
+          event.target.innerText = "Enviar";
+          return; // Evita continuar se o formulário não for válido
+        }
+        event.target.disabled = true;
+        event.target.innerText = "Enviando...";
+      }
   
     async sendForm(event) {
-      try {
         this.onSubmission(event);
-        await fetch(this.url, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify(this.getFormObject()),
-        });
-        this.displaySuccess();
-      } catch (error) {
-        this.displayError();
-        throw new Error(error);
-      }
+        if (!this.form.reportValidity()) {
+            // Se o formulário for inválido, não tenta enviar
+            return;
+        }
+        try{
+            const response = await fetch(this.url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify(this.getFormObject()),
+                });
+                if (!response.ok) {
+                    throw new Error(`Erro: ${response.status}`);
+                }
+                this.displaySuccess();
+        }catch(error){
+            this.displayError();
+            console.error(error);
+        }   
     }
+
   
     init() {
       if (this.form) this.formButton.addEventListener("click", this.sendForm);
@@ -82,4 +95,5 @@ class FormSubmit {
     success: "<h1 class='success'>Mensagem enviada!</h1>",
     error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
   });
+
   formSubmit.init();

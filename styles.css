@@ -1,25 +1,36 @@
 :root{
     --margemPadrao: 10rem;
-    --backgroundColor:#252525;
+    --backgroundColor: #021122;
     --text: #f0eeea ;
-    --primary: #015d87;
-    --secondary: #104277;
-    --secondaryshade: #021d398e;
-    --accent: #089299 ;
-    --photogradient: radial-gradient(circle at center, var(--secondary),var(--backgroundColor));
+    --primary01: #015d87;
+    --primary02: #00afff;
+    --secondary01: #104277;
+    --secondary02: #021d398e;
+    --secondary03: #0a294a;
+    --accent01: #089299 ;
+    --accent02: #0afafa ;
+    --accent03: #3eb2e8 ; 
+    --accent04: #e8743e ; 
+    --accent05: #f0eeea ;
+    --photogradient: radial-gradient(circle at center, var(--secondary01),var(--backgroundColor));
     --nikitirunColor:  #0758877b;
 }
 
 /*e3b0b0d9*/
 .light-mode:root{
     --margemPadrao: 10rem;
-    --backgroundColor: #e0e0e0;
+    --backgroundColor: #dcecf1;
     --text: #212121;
-    --primary: #015a84;
-    --secondary: #104277;
-    --secondaryshade: #cef9f08e;
-    --accent: #089299 ;
-    --photogradient: radial-gradient(circle at center, var(--secondary),var(--backgroundColor));
+    --primary01: #015a84;
+    --primary02: #015d87;
+    --secondary01: #104277;
+    --secondary02: #d4e6f1;
+    --accent01: #089299 ;
+    --accent02: #8c00ff ;
+    --accent03: #2d5697 ; 
+    --accent04: #e67845 ; 
+    --accent05: #f0eeea ;
+    --photogradient: radial-gradient(circle at center, var(--secondary01),var(--backgroundColor));
     --nikitirunColor:  #c0e1f4;
   }
 
@@ -34,7 +45,7 @@ html{
 }
 
 b{
-    color: var(--accent);
+    color: var(--accent03);
 }
 
 .menu{
@@ -52,7 +63,7 @@ b{
 }
 
 .menu-item:hover{
-    color: var(--accent);
+    color: var(--accent02);
 }
 
 .clickable:hover{
@@ -72,7 +83,7 @@ b{
 .myFoto{
     height: 250px;
     width: auto;
-    border: 3px solid var(--primary);
+    border: 3px solid var(--primary01);
     border-radius: 50%;
 }
 
@@ -91,7 +102,7 @@ b{
 }
 
 .title{
-    color: var(--primary);
+    color: var(--primary02);
     font-size: 36px;
 }
 
@@ -114,7 +125,7 @@ b{
     margin-bottom: 5px;
     border-radius: 8px;
     
-    border: 1px solid var(--primary);
+    border: 1px solid var(--primary01);
     background-color: var(--backgroundColor);
     
     color: var(--text);
@@ -122,7 +133,7 @@ b{
 }
 
 .form-field:hover{
-    box-shadow: 0 0 20px 2px var(--accent);
+    box-shadow: 0 0 0.250rem 0.125rem var(--accent01);
 }
 
 .form-label{
@@ -145,7 +156,7 @@ b{
 }
 
 .input-focus:focus{
-    box-shadow: 0 0 20px 2px var(--accent);
+    box-shadow: 0 0 0.250rem 0.125rem var(--accent01);
 }
 
 .submit-button{
@@ -157,7 +168,7 @@ b{
     cursor: pointer;
 
     background-color: var(--backgroundColor);
-    border: 2px solid var(--accent);
+    border: 2px solid var(--accent01);
     border-radius: 10px;
     
     height: 36px;
@@ -167,14 +178,14 @@ b{
 .submit-button:hover{
     color: var(--text);
     background-color: var(--backgroundColor);
-    border-color: var(--text);
+    border-color: var(--accent05);
     cursor: pointer;
     transition-duration: 1s;
 
     animation: botao forwards;
     animation-duration: 1.5s;
 
-    box-shadow: 0 0 30px 2px var(--accent);
+    box-shadow: 0 0 0.250rem 0.125rem var(--accent01);
 }
 
 .submit-button:disabled{
@@ -182,7 +193,7 @@ b{
 }
 
 .success{
-    color: var(--accent);
+    color: var(--accent01);
 }
 
 .error{
@@ -217,18 +228,18 @@ b{
     border: 1px 1px 1px 1px ;
     background-color: var(--backgroundColor);
     border-radius: 10px;
-    border-color: var(--primary)
+    border-color: var(--primary01)
 }
 
 #theme-button:hover{
-    box-shadow: 0 0 20px 2px var(--accent);
+    box-shadow: 0 0 0.250rem 0.125rem var(--accent01);
 }
 
 .skill-div{
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 10px 20px;
-    background-color: var(--secondaryshade);
+    background-color: var(--secondary02);
     border-radius: 15px;
 }
 .skill-div h1{
@@ -244,10 +255,18 @@ b{
 }
 
 .skill-div a{
-    color: var(--text);
-    text-decoration-color: var(--accent);
-    font-weight: bold;
+    font-weight: 300;
+    color: var(--accent02);
+    text-decoration-color: var(--accent02);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
 }
+
+.skill-div a:hover{
+    color: var(--accent04);
+    text-decoration-color: var(--accent04);
+}
+
 
 #nikitirun{
     margin-top: 1rem;
@@ -270,7 +289,7 @@ b{
     color: var(--text);
 
     background-color: var(--backgroundColor);
-    border: 2px solid var(--accent);
+    border: 2px solid var(--accent01);
     border-radius: 10px;
     
     height: 80px;
@@ -280,12 +299,12 @@ b{
 #projeto-button:hover{
     color: var(--text);
     background-color: var(--backgroundColor);
-    border-color: var(--text);
+    border-color: var(--accent05);
     cursor: pointer;
     transition-duration: 1s;
 
     animation: botao forwards;
     animation-duration: 1.5s;
 
-    box-shadow: 0 0 30px 2px var(--accent);
+    box-shadow: 0 0 0.250rem 0.125rem var(--accent01);
 }

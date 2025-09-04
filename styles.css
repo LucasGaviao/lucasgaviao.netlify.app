@@ -48,6 +48,22 @@ b{
     color: var(--accent03);
 }
 
+.nao-atualizado{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 50px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: var(--accent04);
+    background-color: var(--accent05);
+    margin: 0;
+}
+
 .menu{
     display: flex;
     gap: 15px;
